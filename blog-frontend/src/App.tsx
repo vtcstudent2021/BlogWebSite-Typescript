@@ -5,6 +5,7 @@ import CreateBlogPage from './pages/CreateBlogPage';
 import BlogDetailPage from './pages/BlogDetailPage';
 import EditBlogPage from './pages/EditBlogPage';
 
+
 const App: React.FC = () => {
   return (
     <Router>

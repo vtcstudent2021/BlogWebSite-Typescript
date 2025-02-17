@@ -12,7 +12,7 @@ const EditBlogPage: React.FC = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/blogs/${id}`);
+        const response = await axios.get(`https://potential-space-carnival-57vwp6q4pwg24q57-3000.app.github.dev/blogs/${id}`);
         setTitle(response.data.title);
         setContent(response.data.content);
       } catch (error) {
@@ -26,7 +26,7 @@ const EditBlogPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.put(`https://silver-disco-vjpx74vgjv7f64p-3000.app.github.dev/blogs/${id}`, { title, content });
+      await axios.put(`https://potential-space-carnival-57vwp6q4pwg24q57-3000.app.github.dev/blogs/${id}`, { title, content });
       navigate(`/blogs/${id}`);
     } catch (error) {
       console.error('Error updating blog:', error);

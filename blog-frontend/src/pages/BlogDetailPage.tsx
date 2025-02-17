@@ -10,7 +10,7 @@ const BlogDetailPage: React.FC = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`https://silver-disco-vjpx74vgjv7f64p-3000.app.github.dev/blogs/${id}`);
+        const response = await axios.get(`https://potential-space-carnival-57vwp6q4pwg24q57-3000.app.github.dev/blogs/${id}`);
         setBlog(response.data);
       } catch (error) {
         console.error('Error fetching blog:', error);

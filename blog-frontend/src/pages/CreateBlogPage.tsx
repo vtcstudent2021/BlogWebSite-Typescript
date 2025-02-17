@@ -11,7 +11,7 @@ const CreateBlogPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post('https://silver-disco-vjpx74vgjv7f64p-3000.app.github.dev/blogs', { title, content });
+      await axios.post('https://potential-space-carnival-57vwp6q4pwg24q57-3000.app.github.dev/blogs', { title, content });
       navigate('/');
     } catch (error) {
       console.error('Error creating blog:', error);

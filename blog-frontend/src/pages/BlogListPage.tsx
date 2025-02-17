@@ -9,7 +9,7 @@ const BlogListPage: React.FC = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('https://silver-disco-vjpx74vgjv7f64p-3000.app.github.dev/blogs');
+        const response = await axios.get('https://potential-space-carnival-57vwp6q4pwg24q57-3000.app.github.dev/blogs');
         setBlogs(response.data);
       } catch (error) {
         console.error('Error fetching blogs:', error);
