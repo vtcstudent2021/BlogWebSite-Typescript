@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import BlogItem from '../components/BlogItem';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const BlogListPage: React.FC = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
@@ -21,7 +22,7 @@ const BlogListPage: React.FC = () => {
 
   return (
     <div className="blog-list-page">
-      <h1>Blog List</h1>
+      <Navbar />
       <Link to="/create" className="create-blog-link">
         Create New Blog
       </Link>
