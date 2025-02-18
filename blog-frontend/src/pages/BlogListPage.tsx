@@ -3,6 +3,8 @@ import axios from 'axios';
 import BlogItem from '../components/BlogItem';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+
 
 const BlogListPage: React.FC = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
